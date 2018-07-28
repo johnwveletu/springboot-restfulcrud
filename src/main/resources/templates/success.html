@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>第一个 thymeleaf 测试页面</h1>
+    <div th:text="${hello}" ></div>
+    <hr>
+    <div th:utext="${hello}"></div>
+    <hr>
+    <h4 th:each=" usr : ${list}">[[${usr}]]</h4>
+    <hr>
+    <h4>
+        <span th:each="usr : ${list}">[[${usr}]]</span>
+    </h4>
+</body>
+</html>
